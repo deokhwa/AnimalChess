@@ -30,6 +30,7 @@ public class s_BoardSet : MonoBehaviour
             {
                 if (hit.collider.gameObject.tag == "P_Piece") {
                     Piece = hit.collider.gameObject;
+                    //test_script
                     Piece.GetComponent<s_RookInit>().MoveCondition();
                 }
                 else if (hit.collider.gameObject.tag == "Piece_State" && Piece != null){

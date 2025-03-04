@@ -9,6 +9,7 @@ public class s_GameStart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        canvases[0].SetActive(true);
         canvases[1].SetActive(false);
     }
 
@@ -23,7 +24,7 @@ public class s_GameStart : MonoBehaviour
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Piece_State");
         foreach (GameObject obj in objects)
         {
-            Destroy(obj);
+            obj.SetActive(false);
         }
         canvases[0].SetActive(false);
         canvases[1].SetActive(true);

@@ -356,6 +356,7 @@
 "Assets/Script/s_GameStart.cs"
 "Assets/Script/s_GoToStage1.cs"
 "Assets/Script/s_Promotion.cs"
+"Assets/Script/s_RookInit.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

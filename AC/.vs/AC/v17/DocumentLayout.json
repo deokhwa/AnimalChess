@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\KGA_Project\\AC\\",
+  "WorkspaceRootPath": "C:\\unity_project\\TeamProject\\AC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|d:\\kga_project\\ac\\assets\\script\\s_rookinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_rookinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|C:\\unity_project\\TeamProject\\AC\\assets\\script\\s_gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\s_boardset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_boardset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|d:\\kga_project\\ac\\assets\\script\\s_boardinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|C:\\unity_project\\TeamProject\\AC\\assets\\script\\s_boardinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_boardinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\s_promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|C:\\unity_project\\TeamProject\\AC\\assets\\script\\s_boardset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_boardset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\s_gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|c:\\unity_project\\teamproject\\ac\\assets\\script\\s_rookinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_rookinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|C:\\unity_project\\TeamProject\\AC\\assets\\script\\s_promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "s_Promotion.cs",
-              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_Promotion.cs",
+              "DocumentMoniker": "C:\\unity_project\\TeamProject\\AC\\Assets\\Script\\s_Promotion.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\s_Promotion.cs",
-              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\s_Promotion.cs",
+              "ToolTip": "C:\\unity_project\\TeamProject\\AC\\Assets\\Script\\s_Promotion.cs",
               "RelativeToolTip": "Assets\\Script\\s_Promotion.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -48,52 +48,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "s_BoardInfo.cs",
-              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_BoardInfo.cs",
+              "DocumentMoniker": "C:\\unity_project\\TeamProject\\AC\\Assets\\Script\\s_BoardInfo.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\s_BoardInfo.cs",
-              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\s_BoardInfo.cs",
+              "ToolTip": "C:\\unity_project\\TeamProject\\AC\\Assets\\Script\\s_BoardInfo.cs",
               "RelativeToolTip": "Assets\\Script\\s_BoardInfo.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAADwvywAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T13:42:26.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "s_RookInit.cs",
-              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_RookInit.cs",
+              "DocumentMoniker": "C:\\unity_project\\TeamProject\\AC\\Assets\\Script\\s_RookInit.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\s_RookInit.cs",
-              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\s_RookInit.cs",
+              "ToolTip": "C:\\unity_project\\TeamProject\\AC\\Assets\\Script\\s_RookInit.cs",
               "RelativeToolTip": "Assets\\Script\\s_RookInit.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAwDYAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwD8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T07:14:55.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "s_GameStart.cs",
-              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_GameStart.cs",
+              "DocumentMoniker": "C:\\unity_project\\TeamProject\\AC\\Assets\\Script\\s_GameStart.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\s_GameStart.cs",
-              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\s_GameStart.cs",
+              "ToolTip": "C:\\unity_project\\TeamProject\\AC\\Assets\\Script\\s_GameStart.cs",
               "RelativeToolTip": "Assets\\Script\\s_GameStart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwB8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T06:27:15.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "s_BoardSet.cs",
-              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_BoardSet.cs",
+              "DocumentMoniker": "C:\\unity_project\\TeamProject\\AC\\Assets\\Script\\s_BoardSet.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\s_BoardSet.cs",
-              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\s_BoardSet.cs",
+              "ToolTip": "C:\\unity_project\\TeamProject\\AC\\Assets\\Script\\s_BoardSet.cs",
               "RelativeToolTip": "Assets\\Script\\s_BoardSet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwCEAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T15:00:37.011Z",
               "EditorCaption": ""

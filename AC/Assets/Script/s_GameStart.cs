@@ -7,12 +7,15 @@ public class s_GameStart : MonoBehaviour
 {
     public GameObject[] canvases;
     public s_BoardInfo BoardInfo;
+
+    
     // Start is called before the first frame update
     void Start()
     {
         canvases[0].SetActive(true);
         canvases[1].SetActive(false);
         BoardInfo = FindObjectOfType<s_BoardInfo>();
+
     }
 
     // Update is called once per frame
@@ -30,6 +33,8 @@ public class s_GameStart : MonoBehaviour
         }
         canvases[0].SetActive(false);
         canvases[1].SetActive(true);
+
+        BoardInfo.IsGameStart = true;
 
         BoardInfo.BoardInitialize();
     }

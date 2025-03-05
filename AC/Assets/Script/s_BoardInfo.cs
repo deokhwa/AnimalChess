@@ -7,9 +7,11 @@ public class s_BoardInfo : MonoBehaviour
     public GameObject[,] Board;
     int pos_x;
     int pos_z;
+    public bool IsGameStart;
     // Start is called before the first frame update
     void Start()
     {
+        IsGameStart = false;
         Board = new GameObject[8,8];
 
         for (int i = 0; i < 8; i++)
@@ -20,8 +22,6 @@ public class s_BoardInfo : MonoBehaviour
 
             }
         }
-
-        Debug.Log(Board);
 
     }
     
@@ -60,10 +60,15 @@ public class s_BoardInfo : MonoBehaviour
                 }
             }
         }
+
         /*
-        for (int k = 0; k < 8; k++) {
-            for (int l = 0; l < 8; l++) {
-                Debug.Log(Board[k, l]);
+        for (int k = 0; k < 8; k++)
+        {
+            for (int l = 0; l < 8; l++)
+            {
+                Debug.Log(k + " " + l + " " + Board[k, l]);
+                if (Board[k, l] != null)
+                { Debug.Log(k + " " + l + " " + "check"); }
             }
         }
         */

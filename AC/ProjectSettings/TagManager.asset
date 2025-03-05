@@ -8,6 +8,8 @@ TagManager:
   - P_Piece
   - Inventory
   - Piece_State
+  - Ground
+  - MoveFlag
   layers:
   - Default
   - TransparentFX

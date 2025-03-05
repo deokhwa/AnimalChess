@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class s_RookInit : MonoBehaviour
 {
 
-    int health;
-    int attack;
+    public int health;
+    public int attack;
     int pos_x;
     int pos_z;
     public s_BoardInfo BoardInfo;
@@ -28,39 +29,44 @@ public class s_RookInit : MonoBehaviour
         pos_z = (int)transform.position.z;
     }
     public void MoveCondition() {
-        for (int i = pos_x+1; i <= 7; i++)
+        if (0 <= pos_x && pos_x <= 7 && 0 <= pos_z && pos_z <= 7)
         {
-            if (BoardInfo.Board[i, pos_z] == null)
+            for (int i = pos_x + 1; i <= 7; i++)
             {
-                Instantiate(AbleToMove, new Vector3(i, 0.5f, pos_z), Quaternion.identity);
+                if (BoardInfo.Board[i, pos_z] == null)
+                {
+                    Instantiate(AbleToMove, new Vector3(i, 0.1f, pos_z), Quaternion.identity);
+                }
+                else { break; }
             }
-            else { break; }
-        }
-        for (int i = pos_x-1; i >= 0; i--)
-        {
-            if (BoardInfo.Board[i, pos_z] == null)
+            for (int i = pos_x - 1; i >= 0; i--)
             {
-                Instantiate(AbleToMove, new Vector3(i, 0.5f, pos_z), Quaternion.identity);
+                if (BoardInfo.Board[i, pos_z] == null)
+                {
+                    Instantiate(AbleToMove, new Vector3(i, 0.1f, pos_z), Quaternion.identity);
+                }
+                else { break; }
             }
-            else { break; }
-        }
-        for (int i = pos_z+1; i <= 7; i++)
-        {
-            if (BoardInfo.Board[pos_x, i] == null)
+            for (int i = pos_z + 1; i <= 7; i++)
             {
-                Instantiate(AbleToMove, new Vector3(pos_x, 0.5f, i), Quaternion.identity);
+                if (BoardInfo.Board[pos_x, i] == null)
+                {
+                    Instantiate(AbleToMove, new Vector3(pos_x, 0.1f, i), Quaternion.identity);
+                }
+                else { break; }
             }
-            else { break; }
-        }
-        for (int i = pos_z-1; i >= 0; i--)
-        {
-            if (BoardInfo.Board[pos_x, i] == null)
+            for (int i = pos_z - 1; i >= 0; i--)
             {
-                Instantiate(AbleToMove, new Vector3(pos_x, 0.5f, i), Quaternion.identity);
+                if (BoardInfo.Board[pos_x, i] == null)
+                {
+                    Instantiate(AbleToMove, new Vector3(pos_x, 0.1f, i), Quaternion.identity);
+                }
+                else { break; }
             }
-            else { break; }
         }
+
     }
+
     /*
     public void MoveCondition() {
         
@@ -105,6 +111,8 @@ public class s_RookInit : MonoBehaviour
     
     }
     */
-
+    public void RookMove() { 
+        
+    }
 
 }

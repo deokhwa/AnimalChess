@@ -6,6 +6,9 @@ public class s_BoardSet : MonoBehaviour
 {
 
     GameObject Piece;
+    public s_BoardInfo BoardInfo;
+    public s_RookInit Rook;
+
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +19,10 @@ public class s_BoardSet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PointAndClick();
+        PointAndClickMove();
     }
 
-    void PointAndClick() {
+    void PointAndClickMove() {
         if (Input.GetMouseButtonDown(0))
         {
 
@@ -30,7 +33,6 @@ public class s_BoardSet : MonoBehaviour
             {
                 if (hit.collider.gameObject.tag == "P_Piece") {
                     Piece = hit.collider.gameObject;
-                    
                 }
                 else if (hit.collider.gameObject.tag == "Piece_State" && Piece != null){
                     Piece.transform.position = hit.collider.gameObject.transform.position;
@@ -38,17 +40,6 @@ public class s_BoardSet : MonoBehaviour
                 }
                 
             }
-            if (Piece == null) {
-                GameObject[] objects = GameObject.FindGameObjectsWithTag("MoveFlag");
-                foreach (GameObject obj in objects)
-                {
-                    if (obj.name != "AbleToMove")
-                    {
-                        obj.SetActive(false);
-                    }
-                }
-            }
-
         }
     }
 }

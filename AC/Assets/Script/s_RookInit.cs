@@ -6,20 +6,23 @@ using UnityEngine;
 
 public class s_RookInit : MonoBehaviour
 {
+    GameObject Piece;
 
     public int health;
     public int attack;
     int pos_x;
     int pos_z;
     public s_BoardInfo BoardInfo;
+
     public GameObject AbleToMove;
+
     // Start is called before the first frame update
     void Start()
     {
         health = UnityEngine.Random.Range(1, 5);
         attack = UnityEngine.Random.Range(1, 5);
+        Piece = null;
         
-
     }
 
     // Update is called once per frame
@@ -27,6 +30,7 @@ public class s_RookInit : MonoBehaviour
     {
         pos_x = (int)transform.position.x;
         pos_z = (int)transform.position.z;
+        if (BoardInfo.IsGameStart) { RookMove(); }
     }
     public void MoveCondition() {
         if (0 <= pos_x && pos_x <= 7 && 0 <= pos_z && pos_z <= 7)
@@ -67,15 +71,52 @@ public class s_RookInit : MonoBehaviour
 
     }
 
-    /*
-    public void MoveCondition() {
+
+    public void RookMove() {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.collider.gameObject.name == "Player_Rook" && Piece == null)
+                {
+                    Piece = hit.collider.gameObject;
+                    MoveCondition();
+                }
+                else if (hit.collider.gameObject.tag == "MoveFlag" && Piece != null)
+                {
+                    BoardInfo.Board[(int)Piece.transform.position.x, (int)Piece.transform.position.z] = null;
+                    BoardInfo.Board[(int)hit.collider.gameObject.transform.position.x, (int)hit.collider.gameObject.transform.position.z] = hit.collider.gameObject;
+                    Piece.transform.position = hit.collider.gameObject.transform.position;
+                    Piece = null;
+                }
+                else {
+                    Piece = null;
+                }
+            }
+            if (Piece == null)
+            {
+                GameObject[] objects = GameObject.FindGameObjectsWithTag("MoveFlag");
+                foreach (GameObject obj in objects)
+                {
+                    Destroy(obj);
+                }
+            }
+
+        }
         
+    }
+        /*
+    public void MoveCondition() {
+
         //Collider[] hitColliders = Physics.OverlapSphere(new Vector3(pos_x, 0, pos_z), 0.4f);
         //foreach (var collider in hitColliders)
         //{
         //    Debug.Log("°ãÄ¡´Â ¹°Ã¼: " + collider.gameObject.name);
         //}
-        
+
         for (int i = pos_x; i <= 7; i++) {
             Collider[] hitColliders = Physics.OverlapSphere(new Vector3(i,0,pos_z), 0.4f);
             foreach (var collider in hitColliders)
@@ -107,12 +148,8 @@ public class s_RookInit : MonoBehaviour
                 Debug.Log("pos_x:" + pos_x + "i: " + i + "°ãÄ¡´Â ¹°Ã¼: " + collider.gameObject.name);
             }
         }
-        
-    
+
+
     }
     */
-    public void RookMove() { 
-        
-    }
-
 }

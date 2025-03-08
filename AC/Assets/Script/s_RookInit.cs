@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class s_RookInit : MonoBehaviour
@@ -16,12 +18,15 @@ public class s_RookInit : MonoBehaviour
 
     public GameObject AbleToMove;
 
+    private List<GameObject> CanAttack;
+
     // Start is called before the first frame update
     void Start()
     {
         health = UnityEngine.Random.Range(1, 5);
         attack = UnityEngine.Random.Range(1, 5);
         Piece = null;
+        CanAttack = new List<GameObject>();
         
     }
 
@@ -33,6 +38,7 @@ public class s_RookInit : MonoBehaviour
         if (BoardInfo.IsGameStart) { RookMove(); }
     }
     public void MoveCondition() {
+
         if (0 <= pos_x && pos_x <= 7 && 0 <= pos_z && pos_z <= 7)
         {
             for (int i = pos_x + 1; i <= 7; i++)
@@ -41,7 +47,10 @@ public class s_RookInit : MonoBehaviour
                 {
                     Instantiate(AbleToMove, new Vector3(i, 0.1f, pos_z), Quaternion.identity);
                 }
-                else { break; }
+                else {
+                    CanAttack.Add(BoardInfo.Board[i, pos_z]);
+                    break; 
+                }
             }
             for (int i = pos_x - 1; i >= 0; i--)
             {
@@ -49,7 +58,10 @@ public class s_RookInit : MonoBehaviour
                 {
                     Instantiate(AbleToMove, new Vector3(i, 0.1f, pos_z), Quaternion.identity);
                 }
-                else { break; }
+                else {
+                    CanAttack.Add(BoardInfo.Board[i, pos_z]);
+                    break; 
+                }
             }
             for (int i = pos_z + 1; i <= 7; i++)
             {
@@ -57,7 +69,10 @@ public class s_RookInit : MonoBehaviour
                 {
                     Instantiate(AbleToMove, new Vector3(pos_x, 0.1f, i), Quaternion.identity);
                 }
-                else { break; }
+                else {
+                    CanAttack.Add(BoardInfo.Board[pos_x, i]); 
+                    break; 
+                }
             }
             for (int i = pos_z - 1; i >= 0; i--)
             {
@@ -65,7 +80,17 @@ public class s_RookInit : MonoBehaviour
                 {
                     Instantiate(AbleToMove, new Vector3(pos_x, 0.1f, i), Quaternion.identity);
                 }
-                else { break; }
+                else {
+                    CanAttack.Add(BoardInfo.Board[pos_x, i]); 
+                    break; 
+                }
+            }
+            if (CanAttack != null)
+            {
+                foreach (GameObject obj in CanAttack)
+                {
+                    Debug.Log(obj.name);
+                }
             }
         }
 
@@ -77,7 +102,7 @@ public class s_RookInit : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            
+
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.collider.gameObject.name == "Player_Rook" && Piece == null)
@@ -92,7 +117,15 @@ public class s_RookInit : MonoBehaviour
                     Piece.transform.position = hit.collider.gameObject.transform.position;
                     Piece = null;
                 }
-                else {
+                else if (CanAttack.Contains(hit.collider.gameObject)) {
+                    BoardInfo.Board[(int)Piece.transform.position.x, (int)Piece.transform.position.z] = null;
+                    BoardInfo.Board[(int)hit.collider.gameObject.transform.position.x, (int)hit.collider.gameObject.transform.position.z] = hit.collider.gameObject;
+                    Piece.transform.position = hit.collider.gameObject.transform.position;
+                    Destroy(hit.collider.gameObject);
+                    Piece = null;
+                }
+                else
+                {
                     Piece = null;
                 }
             }
@@ -103,7 +136,9 @@ public class s_RookInit : MonoBehaviour
                 {
                     Destroy(obj);
                 }
+                CanAttack.Clear();
             }
+
 
         }
         

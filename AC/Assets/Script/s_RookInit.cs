@@ -5,11 +5,10 @@ using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class s_RookInit : MonoBehaviour
 {
-    GameObject Piece;
-
     public int health;
     public int attack;
     int pos_x;
@@ -18,16 +17,25 @@ public class s_RookInit : MonoBehaviour
 
     public GameObject AbleToMove;
 
-    private List<GameObject> CanAttack;
+    public List<GameObject> CanAttack;
+
+    private (int, int)[] MoveDirection;
+    int NewPos_x;
+    int NewPos_z;
 
     // Start is called before the first frame update
     void Start()
     {
         health = UnityEngine.Random.Range(1, 5);
         attack = UnityEngine.Random.Range(1, 5);
-        Piece = null;
         CanAttack = new List<GameObject>();
-        
+
+        MoveDirection = new (int, int)[4];
+        MoveDirection[0] = (1, 0);
+        MoveDirection[1] = (-1, 0);
+        MoveDirection[2] = (0, 1);
+        MoveDirection[3] = (0, -1);
+
     }
 
     // Update is called once per frame
@@ -35,68 +43,44 @@ public class s_RookInit : MonoBehaviour
     {
         pos_x = (int)transform.position.x;
         pos_z = (int)transform.position.z;
-        if (BoardInfo.IsGameStart) { RookMove(); }
+        //if (BoardInfo.IsGameStart) { RookMove(); }
     }
     public void MoveCondition() {
-
-        if (0 <= pos_x && pos_x <= 7 && 0 <= pos_z && pos_z <= 7)
+        foreach ((int, int) dir in MoveDirection)
         {
-            for (int i = pos_x + 1; i <= 7; i++)
+            for (int i = 1; i <= 7; i++)
             {
-                if (BoardInfo.Board[i, pos_z] == null)
+                NewPos_x = pos_x + (i * dir.Item1);
+                NewPos_z = pos_z + (i * dir.Item2);
+                if (0 <= NewPos_x && NewPos_x <= 7 && 0 <= NewPos_z && NewPos_z <= 7)
                 {
-                    Instantiate(AbleToMove, new Vector3(i, 0.1f, pos_z), Quaternion.identity);
+                    if (BoardInfo.Board[NewPos_x, NewPos_z] == null)
+                    {
+                        Debug.Log(NewPos_x + " " +  NewPos_z);
+                        Instantiate(AbleToMove, new Vector3(NewPos_x, 0.1f, NewPos_z), Quaternion.identity);
+                    }
+                    else
+                    {
+                        if (BoardInfo.Board[NewPos_x, NewPos_z].tag == "E_Piece")
+                        {
+                            CanAttack.Add(BoardInfo.Board[NewPos_x, NewPos_z]);
+                        }
+                        break;
+                    }
                 }
-                else {
-                    CanAttack.Add(BoardInfo.Board[i, pos_z]);
-                    break; 
-                }
-            }
-            for (int i = pos_x - 1; i >= 0; i--)
-            {
-                if (BoardInfo.Board[i, pos_z] == null)
-                {
-                    Instantiate(AbleToMove, new Vector3(i, 0.1f, pos_z), Quaternion.identity);
-                }
-                else {
-                    CanAttack.Add(BoardInfo.Board[i, pos_z]);
-                    break; 
-                }
-            }
-            for (int i = pos_z + 1; i <= 7; i++)
-            {
-                if (BoardInfo.Board[pos_x, i] == null)
-                {
-                    Instantiate(AbleToMove, new Vector3(pos_x, 0.1f, i), Quaternion.identity);
-                }
-                else {
-                    CanAttack.Add(BoardInfo.Board[pos_x, i]); 
-                    break; 
-                }
-            }
-            for (int i = pos_z - 1; i >= 0; i--)
-            {
-                if (BoardInfo.Board[pos_x, i] == null)
-                {
-                    Instantiate(AbleToMove, new Vector3(pos_x, 0.1f, i), Quaternion.identity);
-                }
-                else {
-                    CanAttack.Add(BoardInfo.Board[pos_x, i]); 
-                    break; 
-                }
-            }
-            if (CanAttack != null)
-            {
-                foreach (GameObject obj in CanAttack)
-                {
-                    Debug.Log(obj.name);
-                }
+                else { break; }
             }
         }
-
+        if (CanAttack != null)
+        {
+            foreach (GameObject obj in CanAttack)
+            {
+                Debug.Log(obj.name);
+            }
+        }
     }
 
-
+    /*
     public void RookMove() {
         if (Input.GetMouseButtonDown(0))
         {
@@ -105,32 +89,34 @@ public class s_RookInit : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.gameObject.name == "Player_Rook" && Piece == null)
+                if (hit.collider.gameObject.name == "Player_Rook" && BoardInfo.SelectiedPiece == null)
                 {
-                    Piece = hit.collider.gameObject;
+                    BoardInfo.SelectiedPiece = hit.collider.gameObject;
                     MoveCondition();
                 }
-                else if (hit.collider.gameObject.tag == "MoveFlag" && Piece != null)
+                else if (hit.collider.gameObject.tag == "MoveFlag" && BoardInfo.SelectiedPiece != null)
                 {
-                    BoardInfo.Board[(int)Piece.transform.position.x, (int)Piece.transform.position.z] = null;
+                    BoardInfo.Board[(int)BoardInfo.SelectiedPiece.transform.position.x, (int)BoardInfo.SelectiedPiece.transform.position.z] = null;
                     BoardInfo.Board[(int)hit.collider.gameObject.transform.position.x, (int)hit.collider.gameObject.transform.position.z] = hit.collider.gameObject;
-                    Piece.transform.position = hit.collider.gameObject.transform.position;
-                    Piece = null;
+                    BoardInfo.SelectiedPiece.transform.position = hit.collider.gameObject.transform.position;
+                    BoardInfo.SelectiedPiece = null;
                 }
                 else if (CanAttack.Contains(hit.collider.gameObject)) {
-                    BoardInfo.Board[(int)Piece.transform.position.x, (int)Piece.transform.position.z] = null;
+                    //NormalAttack
+                    BoardInfo.Board[(int)BoardInfo.SelectiedPiece.transform.position.x, (int)BoardInfo.SelectiedPiece.transform.position.z] = null;
                     BoardInfo.Board[(int)hit.collider.gameObject.transform.position.x, (int)hit.collider.gameObject.transform.position.z] = hit.collider.gameObject;
-                    Piece.transform.position = hit.collider.gameObject.transform.position;
+                    BoardInfo.SelectiedPiece.transform.position = hit.collider.gameObject.transform.position;
                     Destroy(hit.collider.gameObject);
-                    Piece = null;
+                    BoardInfo.SelectiedPiece = null;
                 }
                 else
                 {
-                    Piece = null;
+                    BoardInfo.SelectiedPiece = null;
                 }
             }
-            if (Piece == null)
+            if (BoardInfo.SelectiedPiece == null)
             {
+                Debug.Log("DestroyByRook");
                 GameObject[] objects = GameObject.FindGameObjectsWithTag("MoveFlag");
                 foreach (GameObject obj in objects)
                 {
@@ -138,11 +124,50 @@ public class s_RookInit : MonoBehaviour
                 }
                 CanAttack.Clear();
             }
-
-
         }
         
     }
+
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /*
     public void MoveCondition() {
 

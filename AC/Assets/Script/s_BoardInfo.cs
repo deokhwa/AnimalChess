@@ -8,11 +8,14 @@ public class s_BoardInfo : MonoBehaviour
     int pos_x;
     int pos_z;
     public bool IsGameStart;
+
+    public GameObject SelectiedPiece;
     // Start is called before the first frame update
     void Start()
     {
         IsGameStart = false;
         Board = new GameObject[8,8];
+        SelectiedPiece = null;
 
         for (int i = 0; i < 8; i++)
         {

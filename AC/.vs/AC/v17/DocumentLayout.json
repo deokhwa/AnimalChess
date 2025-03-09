@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "D:\\KGA_Project\\AC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|d:\\kga_project\\ac\\assets\\script\\pieceinit\\s_pawninit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\pieceinit\\s_pawninit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|d:\\kga_project\\ac\\assets\\script\\s_movesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_movesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\pieceinit\\s_kinginit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\pieceinit\\s_kinginit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\pieceinit\\s_knightinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\pieceinit\\s_knightinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\pieceinit\\s_queeninit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\pieceinit\\s_queeninit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\pieceinit\\s_bishopinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\pieceinit\\s_bishopinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\pieceinit\\s_rookinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\pieceinit\\s_rookinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\s_boardset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_boardset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +43,8 @@
       "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_boardinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|d:\\kga_project\\ac\\assets\\script\\s_bishopinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_bishopinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\s_promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|d:\\kga_project\\ac\\assets\\script\\s_movesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_movesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|D:\\KGA_Project\\AC\\assets\\script\\s_rookinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AEBCECC-5BD6-40A9-CD61-5617F3E9B27B}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\s_rookinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "s_Promotion.cs",
               "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_Promotion.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\s_Promotion.cs",
@@ -51,51 +67,99 @@
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T07:24:25.116Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "s_PawnInit.cs",
+              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_PawnInit.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PieceInit\\s_PawnInit.cs",
+              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_PawnInit.cs",
+              "RelativeToolTip": "Assets\\Script\\PieceInit\\s_PawnInit.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAhwD8AAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:36:32.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "s_MoveSystem.cs",
-              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_MoveSystem.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\s_MoveSystem.cs",
-              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\s_MoveSystem.cs",
-              "RelativeToolTip": "Assets\\Script\\s_MoveSystem.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwAkAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "s_KingInit.cs",
+              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_KingInit.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PieceInit\\s_KingInit.cs",
+              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_KingInit.cs",
+              "RelativeToolTip": "Assets\\Script\\PieceInit\\s_KingInit.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwEYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T08:52:38.66Z",
+              "WhenOpened": "2025-03-09T10:23:34.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "s_QueenInit.cs",
+              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_QueenInit.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PieceInit\\s_QueenInit.cs",
+              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_QueenInit.cs",
+              "RelativeToolTip": "Assets\\Script\\PieceInit\\s_QueenInit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:32:00.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "s_BishopInit.cs",
+              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_BishopInit.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PieceInit\\s_BishopInit.cs",
+              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_BishopInit.cs",
+              "RelativeToolTip": "Assets\\Script\\PieceInit\\s_BishopInit.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:04:37.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "s_KnightInit.cs",
+              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_KnightInit.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PieceInit\\s_KnightInit.cs",
+              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_KnightInit.cs",
+              "RelativeToolTip": "Assets\\Script\\PieceInit\\s_KnightInit.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:10:23.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "s_RookInit.cs",
-              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_RookInit.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\s_RookInit.cs",
-              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\s_RookInit.cs",
-              "RelativeToolTip": "Assets\\Script\\s_RookInit.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAswC8AAAAhAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_RookInit.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PieceInit\\s_RookInit.cs",
+              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\PieceInit\\s_RookInit.cs",
+              "RelativeToolTip": "Assets\\Script\\PieceInit\\s_RookInit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T07:14:55.426Z",
+              "WhenOpened": "2025-03-09T10:04:39.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "s_MoveSystem.cs",
+              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_MoveSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\s_MoveSystem.cs",
+              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\s_MoveSystem.cs",
+              "RelativeToolTip": "Assets\\Script\\s_MoveSystem.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAjwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T08:52:38.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "s_BishopInit.cs",
-              "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_BishopInit.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\s_BishopInit.cs",
-              "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\s_BishopInit.cs",
-              "RelativeToolTip": "Assets\\Script\\s_BishopInit.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAQwC0AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T06:24:51.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "s_BoardInfo.cs",
               "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_BoardInfo.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\s_BoardInfo.cs",
@@ -103,12 +167,11 @@
               "RelativeToolTip": "Assets\\Script\\s_BoardInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T13:42:26.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T13:42:26.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "s_GameStart.cs",
               "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_GameStart.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\s_GameStart.cs",
@@ -116,21 +179,19 @@
               "RelativeToolTip": "Assets\\Script\\s_GameStart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T06:27:15.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T06:27:15.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "s_BoardSet.cs",
               "DocumentMoniker": "D:\\KGA_Project\\AC\\Assets\\Script\\s_BoardSet.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\s_BoardSet.cs",
               "ToolTip": "D:\\KGA_Project\\AC\\Assets\\Script\\s_BoardSet.cs",
               "RelativeToolTip": "Assets\\Script\\s_BoardSet.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAywB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T15:00:37.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T15:00:37.011Z"
             }
           ]
         }
